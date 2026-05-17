@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jellyfin.Data" Version="10.*-*" />
-    <PackageReference Include="Jellyfin.Controller" Version="10.*-*" />
     <PackageReference Include="SQLitePCL.pretty.netstandard" Version="3.1.0" />
+        <ProjectReference Include="/repo/Jellyfin.Data/Jellyfin.Data.csproj" />
+    <ProjectReference Include="/repo/MediaBrowser.Controller/MediaBrowser.Controller.csproj" />
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
